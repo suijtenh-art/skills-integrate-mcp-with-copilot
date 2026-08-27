@@ -26,7 +26,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      # TODO: replace with https://github.com/marketplace/actions/create-an-issue
+      # Using github-script to create issues from markdown files with custom formatting support
+      # This allows parsing markdown files that contain issue titles, bodies, and comments
       - name: Create issues
         uses: actions/github-script@v6
         with:
